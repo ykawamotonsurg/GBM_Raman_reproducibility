@@ -1,0 +1,7 @@
+case_id,msr1_status,n_total,n_carotenoid_high,fraction_carotenoid_high
+Case21,MSR1+,0,0,
+Case21,MSR1−,16,0,0.0
+Case22,MSR1+,15,8,0.5333333333333333
+Case22,MSR1−,16,2,0.125
+Case23,MSR1+,1,1,1.0
+Case23,MSR1−,7,0,0.0
