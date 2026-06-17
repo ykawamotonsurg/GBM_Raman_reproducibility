@@ -1,2 +1,0 @@
-threshold_method,score_method,top_fraction,fixed_cutoff,applied_score_cutoff,half_width,n_cells_after_RBC_exclusion,n_caro_high,frac_caro_high,removed_clusters
-top_fraction,sum,0.15,,0.4594771933820359,4,1589,239,15.040906230333542,8

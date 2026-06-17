@@ -1,9 +1,0 @@
-file,description,key_columns
-fig1b_bag_scores.csv,Processed case-level bag scores for Fig. 1B,"case_id, area4, n_points, bag_score"
-fig1c_auc_summary.csv,AUC summary table for Fig. 1C,"positive_area, negative_area, auc, manuscript_threshold_probability, manuscript_threshold_logit"
-fig1c_roc_ce_cwm.csv,ROC coordinates for CE vs CWM,"threshold, sensitivity, specificity, fpr"
-fig1c_roc_im_ed.csv,ROC coordinates for IM vs ED,"threshold, sensitivity, specificity, fpr"
-fig1c_threshold_metrics.csv,Threshold metrics for manuscript and exact-best thresholds,"threshold_label, threshold_probability, threshold_logit, IM_sens, ED_spec, CE_sens, CWM_spec"
-fig1d_area_averaged_spectra.csv,Area-averaged spectra for Fig. 1D,"area4, raman_shift, mean_intensity"
-fig1e_peak_patient_means.csv,Deidentified patient-level peak means for Fig. 1E,"case_id, Area, peak_cm1, value, n_spectra"
-fig1e_peak_stats_ed_vs_im.csv,ED vs IM peak statistics table used for Fig. 1E reporting,"peak_cm1, estimate, SE, df, t_ratio, p_value, p_adj, contrast_label"
