@@ -1,0 +1,43 @@
+case_public_id,program_label,niche,niche_display,n_cells,score
+Case01,Hypoxia–glycolysis,I,Interstitial,1384,0.9329340090476796
+Case01,Hypoxia–glycolysis,R,Rim,5409,2.3278653082485072
+Case01,HO-1 axis (HMOX1),I,Interstitial,1384,1.9817255237651668
+Case01,HO-1 axis (HMOX1),R,Rim,5409,2.736856926736238
+Case01,Opsonin sensing,I,Interstitial,1384,1.172234679471896
+Case01,Opsonin sensing,R,Rim,5409,0.6137028113322903
+Case01,Lysosomal degradation,I,Interstitial,1384,1.9260644161172955
+Case01,Lysosomal degradation,R,Rim,5409,1.549046578102841
+Case01,Receptor uptake,I,Interstitial,1384,1.649234970449876
+Case01,Receptor uptake,R,Rim,5409,1.3008537507023992
+Case01,Lipid handling,I,Interstitial,1384,0.7429500696359876
+Case01,Lipid handling,R,Rim,5409,1.4039976563708054
+Case01,Efflux/export,I,Interstitial,1384,0.4431316527495458
+Case01,Efflux/export,R,Rim,5409,0.6639956774442278
+Case02,Hypoxia–glycolysis,I,Interstitial,3413,1.0154738479621006
+Case02,Hypoxia–glycolysis,R,Rim,2191,1.8442568837080109
+Case02,HO-1 axis (HMOX1),I,Interstitial,3413,1.0219731779122685
+Case02,HO-1 axis (HMOX1),R,Rim,2191,1.7111252525412413
+Case02,Opsonin sensing,I,Interstitial,3413,1.6915964096694416
+Case02,Opsonin sensing,R,Rim,2191,1.5186896977911006
+Case02,Lysosomal degradation,I,Interstitial,3413,2.8077047230388947
+Case02,Lysosomal degradation,R,Rim,2191,2.6463914747221664
+Case02,Receptor uptake,I,Interstitial,3413,1.7494394281154984
+Case02,Receptor uptake,R,Rim,2191,1.7580214623391028
+Case02,Lipid handling,I,Interstitial,3413,0.7514349446150381
+Case02,Lipid handling,R,Rim,2191,0.9110873296954342
+Case02,Efflux/export,I,Interstitial,3413,0.9773775353821292
+Case02,Efflux/export,R,Rim,2191,1.1755270282688175
+Case03,Hypoxia–glycolysis,I,Interstitial,1265,1.0624950322022295
+Case03,Hypoxia–glycolysis,R,Rim,2953,2.45333840089918
+Case03,HO-1 axis (HMOX1),I,Interstitial,1265,0.8702131236319488
+Case03,HO-1 axis (HMOX1),R,Rim,2953,0.8298621223166679
+Case03,Opsonin sensing,I,Interstitial,1265,1.1592254589125486
+Case03,Opsonin sensing,R,Rim,2953,0.7611519200715017
+Case03,Lysosomal degradation,I,Interstitial,1265,1.534669689089352
+Case03,Lysosomal degradation,R,Rim,2953,1.1942716562465483
+Case03,Receptor uptake,I,Interstitial,1265,1.4070365825433655
+Case03,Receptor uptake,R,Rim,2953,1.1418730086219464
+Case03,Lipid handling,I,Interstitial,1265,0.5918194939902752
+Case03,Lipid handling,R,Rim,2953,0.769424321737471
+Case03,Efflux/export,I,Interstitial,1265,0.3984880259033369
+Case03,Efflux/export,R,Rim,2953,0.4469524325708723

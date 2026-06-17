@@ -1,0 +1,5 @@
+file_name,primary_use,description,key_columns
+fig2a_average_spectra_carotenoidHigh_vs_Low.csv,Fig.2A,Average spectra in long format for carotenoid-low vs carotenoid-high cells after RBC-like cluster exclusion.,"group, shift, n, mean, sd, sem"
+fig2b_regionwise_carotenoidHigh_fraction.csv,Fig.2B,Region-level carotenoid-high fractions with confidence intervals.,"region, n_total, k_caro, ci_lo, frac, ci_hi, frac_pct, ci_lo_pct, ci_hi_pct, region_label, pct_label"
+fig2c_bridge_plot_data.csv,Fig.2C,Case-by-region deidentified summary table for the bridge plot linking Raman score and carotenoid-high fraction.,"case_id, region, bag_score, anchored_score_logit, n_points, n_cells, n_caro_high, carotenoid_high_fraction_pct, mean_caro_score, median_caro_score, mean_1156, mean_1514"
+fig2d_samecell_raman_if_public.csv,Fig.2D,Deidentified same-cell Raman-IF table used for the same-cell unit plot.,"case_id, cell_local_id, carotenoid_high, MSR1_pos_p99, MSR1_pos_p995"
