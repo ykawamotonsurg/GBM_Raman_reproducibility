@@ -1,0 +1,39 @@
+program,program_label,gene
+HypoxiaGlyco,Hypoxia–glycolysis,ADM
+HypoxiaGlyco,Hypoxia–glycolysis,ALDOA
+HypoxiaGlyco,Hypoxia–glycolysis,CA9
+HypoxiaGlyco,Hypoxia–glycolysis,HK2
+HypoxiaGlyco,Hypoxia–glycolysis,LDHA
+HypoxiaGlyco,Hypoxia–glycolysis,NDRG1
+HypoxiaGlyco,Hypoxia–glycolysis,PFKP
+HypoxiaGlyco,Hypoxia–glycolysis,PGK1
+HypoxiaGlyco,Hypoxia–glycolysis,SLC2A1
+HypoxiaGlyco,Hypoxia–glycolysis,VEGFA
+HypoxiaGlyco,Hypoxia–glycolysis,PKM
+Stress,HO-1 axis (HMOX1),HMOX1
+Opsonin_sensing,Opsonin sensing,TLR3
+Opsonin_sensing,Opsonin sensing,CD14
+Opsonin_sensing,Opsonin sensing,C3AR1
+Opsonin_sensing,Opsonin sensing,P2RX4
+Opsonin_sensing,Opsonin sensing,AXL
+Opsonin_sensing,Opsonin sensing,MAFB
+Lysosomal_degradation,Lysosomal degradation,CTSL
+Lysosomal_degradation,Lysosomal degradation,CTSC
+Lysosomal_degradation,Lysosomal degradation,LGMN
+Lysosomal_degradation,Lysosomal degradation,LAMP1
+Lysosomal_degradation,Lysosomal degradation,FCGR2A
+Lysosomal_degradation,Lysosomal degradation,CYBB
+Uptake_receptor,Receptor uptake,MSR1
+Uptake_receptor,Receptor uptake,OLR1
+Uptake_receptor,Receptor uptake,STAB1
+Uptake_receptor,Receptor uptake,LRP1
+Uptake_receptor,Receptor uptake,SCARB1
+Lipid_handling,Lipid handling,LIPA
+Lipid_handling,Lipid handling,NPC1
+Lipid_handling,Lipid handling,NPC2
+Lipid_handling,Lipid handling,SOAT1
+Lipid_handling,Lipid handling,PLIN2
+Efflux_export,Efflux/export,ABCA1
+Efflux_export,Efflux/export,ABCG1
+Efflux_export,Efflux/export,PLTP
+Efflux_export,Efflux/export,APOE
