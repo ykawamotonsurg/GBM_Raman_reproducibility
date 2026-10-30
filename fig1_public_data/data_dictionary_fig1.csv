@@ -1,6 +1,0 @@
-file,primary_use,description,key_columns
-fig1b_bag_scores.csv,Fig.1B,Processed case-by-region bag scores for the CE/CWM reference-derived tissue Raman score.,"case_id, area4, n_points, bag_score"
-fig1c_area_averaged_spectra.csv,Fig.1C,Area-averaged tissue Raman spectra by navigation-defined region.,"area4, raman_shift, mean_intensity"
-fig1d_peak_patient_means.csv,Fig.1D,Deidentified patient-level peak means for representative Raman bands.,"case_id, Area, peak_cm1, value, n_spectra"
-fig1d_peak_stats_ed_vs_im.csv,Fig.1D,ED versus IM peak-statistics table used for in-panel reporting.,"peak_cm1, estimate, SE, df, t_ratio, p_value, p_adj, contrast_label"
-fig1c_threshold_metrics.csv,Fig.1B display aid,Threshold metadata used only to draw the dashed reference line in Fig.1B.,"threshold_label, threshold_probability, threshold_logit, IM_sens, ED_spec, CE_sens, CWM_spec"
