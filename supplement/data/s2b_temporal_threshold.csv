@@ -1,0 +1,2 @@
+threshold_id,aggregation,threshold,positive_comparator,positive_class,negative_class,selection_data
+S2B_top3_fixed,top3mean,0.98162150382995605,>=,tumor,non_tumor,early-period IM/ED OOF bags only

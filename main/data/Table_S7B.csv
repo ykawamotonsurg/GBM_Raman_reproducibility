@@ -1,0 +1,5 @@
+Band (cm⁻¹),Test,Statistic,P,BH-adjusted P
+1156,Exact signed-rank (primary),V = 1,0.0625,0.0625
+1514,Exact signed-rank (primary),V = 0,0.03125,0.0625
+1156,Paired t (secondary),t = −3.514,0.01702,0.01702
+1514,Paired t (secondary),t = −3.612,0.01535,0.01702

@@ -1,0 +1,5 @@
+comparison,bootstrap_unit,B_requested,B_valid,n_positive,n_negative,AUC,CI_low,CI_high,quantile_type
+CE_CWM,class_stratified_bag,10000,10000,22,17,0.981283422459893,0.935828877005348,1,7
+CE_CWM,operation_cluster,10000,10000,22,17,0.981283422459893,0.933333333333333,1,7
+IM_ED,class_stratified_bag,10000,10000,11,7,0.87012987012987,0.675,1,7
+IM_ED,operation_cluster,10000,10000,11,7,0.87012987012987,0.766666666666667,1,7

@@ -1,0 +1,28 @@
+﻿submission_document,sheet,included_csv,delivery,availability
+Data S1.xlsx,Culture_AllConditions,main/data/Culture_AllConditions.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Fucoidan_Pairs,main/data/Fucoidan_Pairs.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Fucoidan_UnitMeans,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Influence_FullPrecision,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,MRI_CaseData,supplement/data/MRI_CaseData.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,QC_MSR1,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Singlecell_Adjusted,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Singlecell_CaseRegion,main/data/Singlecell_CaseRegion.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Singlecell_Pooled,supplement/data/Singlecell_Pooled.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Singlecell_Trend,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S1,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S2,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S3A,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S3B,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S4,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S5A,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S5B,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S5C,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S6,main/data/Table_S6.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S7A,main/data/Table_S7A.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S7B,main/data/Table_S7B.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S8,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S9A,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Table_S9B,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Xenium_D_niches,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Xenium_MSR1_Removal,supplement/data/Xenium_MSR1_Removal.csv,CSV included because needed by drawing or saved annotations; full workbook supplied separately to journal,Author-held submission material; public access/link to be confirmed at publication
+Data S1.xlsx,Xenium_StateMeans,,Journal submission only; not duplicated in this package,Author-held submission material; public access/link to be confirmed at publication

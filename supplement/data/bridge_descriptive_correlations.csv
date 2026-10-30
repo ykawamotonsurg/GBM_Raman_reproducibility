@@ -1,0 +1,7 @@
+scope,n,n_patients,rho,status
+all37,37,22,0.4704544419943359,descriptive
+GBM33,33,18,0.3684485815054372,descriptive
+CWM,4,4,,all fractions identical
+ED,7,7,-0.0445435403187374,descriptive
+IM,8,8,0.8095238095238095,descriptive
+CE,18,18,-0.11825885212633394,descriptive

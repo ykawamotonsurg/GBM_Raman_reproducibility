@@ -1,0 +1,50 @@
+panel_label,program_label,n_cases,mean_effect,n_same,label_nsame
+Primary,Hypoxia-glycolysis,3,1.2048525678812292,3,3/3
+Primary,HO-1 axis,3,0.4679774920949211,2,2/3
+Primary,Opsonin sensing,3,-0.37650403961966444,3,3/3
+Primary,Lysosomal degradation,3,-0.29290970639132863,3,3/3
+Primary,Receptor uptake,3,-0.20165425314843052,2,2/3
+Primary,Lipid handling,3,0.33276826652080316,3,3/3
+Primary,Efflux/export,3,0.15582597474963522,3,3/3
+Hypoxia p97.5,Hypoxia-glycolysis,3,1.0857213516891584,3,3/3
+Hypoxia p97.5,HO-1 axis,3,0.3663803366003671,2,2/3
+Hypoxia p97.5,Opsonin sensing,3,-0.33926004760256684,3,3/3
+Hypoxia p97.5,Lysosomal degradation,3,-0.23711067395579977,3,3/3
+Hypoxia p97.5,Receptor uptake,3,-0.18685554570914828,2,2/3
+Hypoxia p97.5,Lipid handling,3,0.29749735502816765,3,3/3
+Hypoxia p97.5,Efflux/export,3,0.16353039843659375,3,3/3
+Density 5000,Hypoxia-glycolysis,3,1.1920003322375756,3,3/3
+Density 5000,HO-1 axis,3,0.4647097084563281,2,2/3
+Density 5000,Opsonin sensing,3,-0.3663008936812416,3,3/3
+Density 5000,Lysosomal degradation,3,-0.28094852368760465,3,3/3
+Density 5000,Receptor uptake,3,-0.19390729649628502,2,2/3
+Density 5000,Lipid handling,3,0.33382014970762625,3,3/3
+Density 5000,Efflux/export,3,0.1621932884013129,3,3/3
+Density 7000,Hypoxia-glycolysis,3,1.2098537678543668,3,3/3
+Density 7000,HO-1 axis,3,0.46740159029474726,2,2/3
+Density 7000,Opsonin sensing,3,-0.3841655958510966,3,3/3
+Density 7000,Lysosomal degradation,3,-0.30984079461876374,3,3/3
+Density 7000,Receptor uptake,3,-0.20949687405239192,3,3/3
+Density 7000,Lipid handling,3,0.3263541574300297,3,3/3
+Density 7000,Efflux/export,3,0.1447070282572141,3,3/3
+Rim 30,Hypoxia-glycolysis,3,1.282759927080803,3,3/3
+Rim 30,HO-1 axis,3,0.5085750428700822,2,2/3
+Rim 30,Opsonin sensing,3,-0.409844906212338,3,3/3
+Rim 30,Lysosomal degradation,3,-0.33319410357808904,3,3/3
+Rim 30,Receptor uptake,3,-0.23082916127412267,3,3/3
+Rim 30,Lipid handling,3,0.3558277308781593,3,3/3
+Rim 30,Efflux/export,3,0.15211880115461734,3,3/3
+MSR1 ≥2,Hypoxia-glycolysis,3,1.2196020145079152,3,3/3
+MSR1 ≥2,HO-1 axis,3,0.4081329814134542,2,2/3
+MSR1 ≥2,Opsonin sensing,3,-0.4220968150840522,3,3/3
+MSR1 ≥2,Lysosomal degradation,3,-0.3429262705565967,3,3/3
+MSR1 ≥2,Receptor uptake,3,-0.2627003230585418,2,2/3
+MSR1 ≥2,Lipid handling,3,0.3149078611676152,3,3/3
+MSR1 ≥2,Efflux/export,3,0.16093221820486658,3,3/3
+Rim 30 + MSR1 ≥2,Hypoxia-glycolysis,3,1.2941748604751417,3,3/3
+Rim 30 + MSR1 ≥2,HO-1 axis,3,0.44128726126745477,2,2/3
+Rim 30 + MSR1 ≥2,Opsonin sensing,3,-0.453631794643613,3,3/3
+Rim 30 + MSR1 ≥2,Lysosomal degradation,3,-0.38185623098861604,3,3/3
+Rim 30 + MSR1 ≥2,Receptor uptake,3,-0.2908807822112131,3,3/3
+Rim 30 + MSR1 ≥2,Lipid handling,3,0.3398206065873233,3,3/3
+Rim 30 + MSR1 ≥2,Efflux/export,3,0.15434029499570473,3,3/3

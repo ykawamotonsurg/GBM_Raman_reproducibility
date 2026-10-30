@@ -1,0 +1,236 @@
+﻿file,column,description,rows,missing_value_policy
+supplement/data/bridge_descriptive_correlations.csv,scope,Saved source field; original numerical value/text retained. See figure_data_map.csv.,6,Empty remains missing; no imputation.
+supplement/data/bridge_descriptive_correlations.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,6,Empty remains missing; no imputation.
+supplement/data/bridge_descriptive_correlations.csv,n_patients,Saved source field; original numerical value/text retained. See figure_data_map.csv.,6,Empty remains missing; no imputation.
+supplement/data/bridge_descriptive_correlations.csv,rho,Saved Spearman correlation coefficient; no new correlation test.,6,Empty remains missing; no imputation.
+supplement/data/bridge_descriptive_correlations.csv,status,Saved source field; original numerical value/text retained. See figure_data_map.csv.,6,Empty remains missing; no imputation.
+main/data/cell_mean_spectra.csv,group,Saved group/state label; interpretation is specific to the table.,902,Empty remains missing; no imputation.
+main/data/cell_mean_spectra.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,902,Empty remains missing; no imputation.
+main/data/cell_mean_spectra.csv,wavenumber,"Raman shift, cm-1; original sampling grid retained.",902,Empty remains missing; no imputation.
+main/data/cell_mean_spectra.csv,mean,Saved high/low spectrum mean in the original intensity units; no averaging repeated.,902,Empty remains missing; no imputation.
+main/data/cell_mean_spectra.csv,SD,Saved high/low spectrum SD in the original intensity units; no averaging repeated.,902,Empty remains missing; no imputation.
+main/data/cell_mean_spectra.csv,SEM,Saved high/low spectrum SEM in the original intensity units; no averaging repeated.,902,Empty remains missing; no imputation.
+supplement/data/cell_sensitivity.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",36,Empty remains missing; no imputation.
+supplement/data/cell_sensitivity.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,36,Empty remains missing; no imputation.
+supplement/data/cell_sensitivity.csv,k,Saved source field; original numerical value/text retained. See figure_data_map.csv.,36,Empty remains missing; no imputation.
+supplement/data/cell_sensitivity.csv,fraction,Saved source field; original numerical value/text retained. See figure_data_map.csv.,36,Empty remains missing; no imputation.
+supplement/data/cell_sensitivity.csv,score_method,"Frozen sensitivity definition: sum, z1156 or z1514; no new labels computed.",36,Empty remains missing; no imputation.
+supplement/data/cell_sensitivity.csv,top_fraction,Frozen sensitivity fraction (0.10/0.15/0.20); primary classification remains 0.15.,36,Empty remains missing; no imputation.
+shared/data/cells.csv,cell_id,"Unique C pseudonym for one of the 1,499 included Raman cells; not a same-cell microscopy identifier.",1499,Empty remains missing; no imputation.
+shared/data/cells.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,cohort,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",1499,Empty remains missing; no imputation.
+shared/data/cells.csv,cluster,Original frozen cluster label; excluded RBC-like cluster is absent; no clustering run.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,UMAP1,Saved UMAP first coordinate; no embedding fitting or transformation.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,UMAP2,Saved UMAP second coordinate; no embedding fitting or transformation.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,RBC_excluded,Saved RBC exclusion flag; all released included-cell rows are false.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,peak1156_raw,"Saved 1156-band peak input, using the fixed common band definition.",1499,Empty remains missing; no imputation.
+shared/data/cells.csv,peak1514_raw,"Saved 1514-band peak input, using the fixed common band definition.",1499,Empty remains missing; no imputation.
+shared/data/cells.csv,peak1156_z,Saved global z value of 1156 peak; original standardization retained.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,peak1514_z,Saved global z value of 1514 peak; original standardization retained.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,carotenoid_score,Frozen sum of globally standardized 1156 and 1514 peak values; no restandardization.,1499,Empty remains missing; no imputation.
+shared/data/cells.csv,carotenoid_high,Frozen boolean high/low classification; never recomputed for output.,1499,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,variable,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,pearson_r,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,pearson_p,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_1,"Saved ICC(2,1), two-way random-effects absolute-agreement single-measurement ICC.",4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_1_lwr,"Saved lower confidence bound for ICC(2,1).",4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_1_upr,"Saved upper confidence bound for ICC(2,1).",4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_1_p,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_k,"Saved average-measurement ICC sensitivity result; does not replace ICC(2,1).",4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_k_lwr,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_k_upr,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_k_p,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_agreement.csv,ICC2_1_CI,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/mri_necrotic_volume.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,18,Empty remains missing; no imputation.
+supplement/data/mri_necrotic_volume.csv,mean_xy,"Saved mean of two MRI raters, mm3.",18,Empty remains missing; no imputation.
+supplement/data/mri_necrotic_volume.csv,diff_xy,"Saved MRI volume difference rater 2 minus rater 1, mm3.",18,Empty remains missing; no imputation.
+supplement/data/mri_necrotic_volume.csv,bias,"Saved Bland-Altman mean difference, mm3; not recomputed.",18,Empty remains missing; no imputation.
+supplement/data/mri_necrotic_volume.csv,loa_upper,"Saved upper Bland-Altman limit of agreement, mm3.",18,Empty remains missing; no imputation.
+supplement/data/mri_necrotic_volume.csv,loa_lower,"Saved lower Bland-Altman limit of agreement, mm3.",18,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,rho,Saved Spearman correlation coefficient; no new correlation test.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,P,Saved P value from the analysis identified by this table; no new test.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,CI_low,Saved lower confidence limit; analysis/unit are specified by this table.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,bootstrap_median,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,CI_high,Saved upper confidence limit; analysis/unit are specified by this table.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,B,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,seed,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,quantile_type,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1,Empty remains missing; no imputation.
+supplement/data/mri_spearman.csv,finite_draws,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1,Empty remains missing; no imputation.
+supplement/data/mri_tumor_volume.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,18,Empty remains missing; no imputation.
+supplement/data/mri_tumor_volume.csv,mean_xy,"Saved mean of two MRI raters, mm3.",18,Empty remains missing; no imputation.
+supplement/data/mri_tumor_volume.csv,diff_xy,"Saved MRI volume difference rater 2 minus rater 1, mm3.",18,Empty remains missing; no imputation.
+supplement/data/mri_tumor_volume.csv,bias,"Saved Bland-Altman mean difference, mm3; not recomputed.",18,Empty remains missing; no imputation.
+supplement/data/mri_tumor_volume.csv,loa_upper,"Saved upper Bland-Altman limit of agreement, mm3.",18,Empty remains missing; no imputation.
+supplement/data/mri_tumor_volume.csv,loa_lower,"Saved lower Bland-Altman limit of agreement, mm3.",18,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,gene,Saved source field; original numerical value/text retained. See figure_data_map.csv.,36,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,mean_I,Saved interstitial gene mean; exact upstream across-case aggregation unconfirmed.,36,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,mean_R,Saved rim gene mean; exact upstream across-case aggregation unconfirmed.,36,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,delta_R_minus_I,"Saved gene mean expression difference, Rim minus Interstitial; upstream aggregation unresolved.",36,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,program_label,Approved human-readable spatial program name.,36,Empty remains missing; no imputation.
+supplement/data/spatial_hypoxia.csv,case,Original spatial case namespace GBM-A to GBM-D; not an inferred mapping to P IDs.,4,Empty remains missing; no imputation.
+supplement/data/spatial_hypoxia.csv,n_tumor,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/spatial_hypoxia.csv,mean12_log_expression,"Saved 12-gene domain-construction log-expression score, distinct from screening HypoxiaScore.",4,Empty remains missing; no imputation.
+supplement/data/spatial_hypoxia.csv,n_hypoxia_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/spatial_hypoxia.csv,percent_hypoxia_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/spatial_hypoxia.csv,baseline_p99,Saved eligible non-tumor p99 baseline used for domain construction.,4,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,case,Original spatial case namespace GBM-A to GBM-D; not an inferred mapping to P IDs.,126,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,group,Saved group/state label; interpretation is specific to the table.,126,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,program,Saved spatial program identifier; seven programs retained.,126,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,program_label,Approved human-readable spatial program name.,126,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,niche,"Frozen spatial niche: P=perivascular, I=interstitial, R=rim.",126,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,n_cells,Recorded cell count for this row and its specified group/niche or patient-region.,126,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,score,Saved spatial program mean of log-normalized expression; not uptake activity.,126,Empty remains missing; no imputation.
+supplement/data/spatial_sensitivity.csv,panel_label,Saved spatial sensitivity setting label; no mask recomputation.,49,Empty remains missing; no imputation.
+supplement/data/spatial_sensitivity.csv,program_label,Approved human-readable spatial program name.,49,Empty remains missing; no imputation.
+supplement/data/spatial_sensitivity.csv,n_cases,Saved source field; original numerical value/text retained. See figure_data_map.csv.,49,Empty remains missing; no imputation.
+supplement/data/spatial_sensitivity.csv,mean_effect,Saved case-mean Rim minus Interstitial score difference.,49,Empty remains missing; no imputation.
+supplement/data/spatial_sensitivity.csv,n_same,Saved sign-concordant case count; zero-handling rule is not changed.,49,Empty remains missing; no imputation.
+supplement/data/spatial_sensitivity.csv,label_nsame,Exact saved numerator/denominator string printed in the sensitivity heatmap.,49,Empty remains missing; no imputation.
+main/data/tissue_bags.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,57,Empty remains missing; no imputation.
+main/data/tissue_bags.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",57,Empty remains missing; no imputation.
+main/data/tissue_bags.csv,n_points,Number of averaged tissue spectra contributing to the saved bag.,57,Empty remains missing; no imputation.
+main/data/tissue_bags.csv,bag_score,Frozen tissue model probability for one patient-region bag; not newly predicted.,57,Empty remains missing; no imputation.
+main/data/tissue_bags.csv,model,Saved source field; original numerical value/text retained. See figure_data_map.csv.,57,Empty remains missing; no imputation.
+main/data/tissue_bags.csv,style,Saved source field; original numerical value/text retained. See figure_data_map.csv.,57,Empty remains missing; no imputation.
+main/data/tissue_bags.csv,truth_bin,Saved source field; original numerical value/text retained. See figure_data_map.csv.,57,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,cohort,Saved source field; original numerical value/text retained. See figure_data_map.csv.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,n_cells,Recorded cell count for this row and its specified group/niche or patient-region.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,n_caro_high,Count of frozen high cells in the patient-region row.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,frac_caro_high,High-cell fraction on the 0-1 scale; plots multiply by 100 for percent.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,mean_caro_score,Saved source field; original numerical value/text retained. See figure_data_map.csv.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,mean_1156,Saved source field; original numerical value/text retained. See figure_data_map.csv.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,mean_1514,Saved source field; original numerical value/text retained. See figure_data_map.csv.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,region_ord,Saved source field; original numerical value/text retained. See figure_data_map.csv.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,bag_score,Frozen tissue model probability for one patient-region bag; not newly predicted.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,bag_clip,Saved clipped probability used only for logit display.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,bag_logit,Saved logit of the frozen clipped tissue probability.,37,Empty remains missing; no imputation.
+supplement/data/tissue_cell_bridge.csv,fraction_per_10pp,Saved high fraction in units of 10 percentage points.,37,Empty remains missing; no imputation.
+shared/data/tissue_peak_annotations.csv,peak_cm1,"Raman band center, cm-1.",4,Empty remains missing; no imputation.
+shared/data/tissue_peak_annotations.csv,p_Holm,Saved Holm-adjusted P; existing contrast family retained.,4,Empty remains missing; no imputation.
+shared/data/tissue_peak_annotations.csv,label,Exact saved significance annotation; no new rounding or testing.,4,Empty remains missing; no imputation.
+shared/data/tissue_peak_annotations.csv,y,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+shared/data/tissue_peak_annotations.csv,ytext,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+shared/data/tissue_peak_annotations.csv,tip,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+shared/data/tissue_peaks.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,228,Empty remains missing; no imputation.
+shared/data/tissue_peaks.csv,cohort,Saved source field; original numerical value/text retained. See figure_data_map.csv.,228,Empty remains missing; no imputation.
+shared/data/tissue_peaks.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",228,Empty remains missing; no imputation.
+shared/data/tissue_peaks.csv,peak_cm1,"Raman band center, cm-1.",228,Empty remains missing; no imputation.
+shared/data/tissue_peaks.csv,value,Saved patient-region mean relative band intensity; pairing via patient_id retained.,228,Empty remains missing; no imputation.
+shared/data/tissue_peaks.csv,n_spectra,Number of spectra contributing to this saved measurement summary.,228,Empty remains missing; no imputation.
+shared/data/tissue_roc.csv,comparison,Saved source field; original numerical value/text retained. See figure_data_map.csv.,61,Empty remains missing; no imputation.
+shared/data/tissue_roc.csv,threshold,Saved threshold of a ROC coordinate; no new operating point selected.,61,Empty remains missing; no imputation.
+shared/data/tissue_roc.csv,FPR,"Saved ROC false-positive-rate coordinate, 0-1.",61,Empty remains missing; no imputation.
+shared/data/tissue_roc.csv,TPR,"Saved ROC sensitivity coordinate, 0-1.",61,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,comparison,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,bootstrap_unit,Unit of the previously saved bootstrap interval; no resampling here.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,B_requested,Requested replicates in the existing bootstrap result.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,B_valid,Valid replicates in the existing bootstrap result.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,n_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,n_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,AUC,Saved area under ROC curve.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,CI_low,Saved lower confidence limit; analysis/unit are specified by this table.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,CI_high,Saved upper confidence limit; analysis/unit are specified by this table.,4,Empty remains missing; no imputation.
+shared/data/tissue_roc_statistics.csv,quantile_type,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+main/data/tissue_spectra.csv,area4,Saved source field; original numerical value/text retained. See figure_data_map.csv.,1804,Empty remains missing; no imputation.
+main/data/tissue_spectra.csv,raman_shift,"Raman shift, cm-1; original sampling grid retained.",1804,Empty remains missing; no imputation.
+main/data/tissue_spectra.csv,mean_intensity,Saved region-average relative intensity on the original normalized spectrum scale.,1804,Empty remains missing; no imputation.
+main/data/Culture_AllConditions.csv,model,Saved source field; original numerical value/text retained. See figure_data_map.csv.,10,Empty remains missing; no imputation.
+main/data/Culture_AllConditions.csv,Condition,Saved source field; original numerical value/text retained. See figure_data_map.csv.,10,Empty remains missing; no imputation.
+main/data/Culture_AllConditions.csv,peak,Saved source field; original numerical value/text retained. See figure_data_map.csv.,10,Empty remains missing; no imputation.
+main/data/Culture_AllConditions.csv,mean,Saved source field; original numerical value/text retained. See figure_data_map.csv.,10,Empty remains missing; no imputation.
+main/data/Culture_AllConditions.csv,sd,Saved source field; original numerical value/text retained. See figure_data_map.csv.,10,Empty remains missing; no imputation.
+main/data/Culture_AllConditions.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,10,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,experiment_id,Anonymous experimental day block; Day1-Day3 are the six-pair experiment; other culture blocks remain distinct.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,measurement_id,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,unit_id,Paired experimental unit; model/day/measurement structure retained across conditions and bands.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,peak,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,mean_intensity_caro,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,n_spectra_caro,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,mean_intensity_fuco,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,n_spectra_fuco,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,difference_fuco_minus_caro,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,ratio_fuco_over_caro,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,reduction_percent_of_loaded_signal,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,ratio_note,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,decreased,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+main/data/Fucoidan_Pairs.csv,absolute_difference_rank,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,enhance_fraction,Saved source field; original numerical value/text retained. See figure_data_map.csv.,18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,n_cells,Recorded cell count for this row and its specified group/niche or patient-region.,18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,n_high,Saved source field; original numerical value/text retained. See figure_data_map.csv.,18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,fraction,Saved source field; original numerical value/text retained. See figure_data_map.csv.,18,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,cohort,Saved source field; original numerical value/text retained. See figure_data_map.csv.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,n_cells,Recorded cell count for this row and its specified group/niche or patient-region.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,n_caro_high,Count of frozen high cells in the patient-region row.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,frac_caro_high,High-cell fraction on the 0-1 scale; plots multiply by 100 for percent.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,mean_caro_score,Saved source field; original numerical value/text retained. See figure_data_map.csv.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,mean_1156,Saved source field; original numerical value/text retained. See figure_data_map.csv.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,mean_1514,Saved source field; original numerical value/text retained. See figure_data_map.csv.,38,Empty remains missing; no imputation.
+main/data/Singlecell_CaseRegion.csv,region_ord,Saved source field; original numerical value/text retained. See figure_data_map.csv.,38,Empty remains missing; no imputation.
+supplement/data/Singlecell_Pooled.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",4,Empty remains missing; no imputation.
+supplement/data/Singlecell_Pooled.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/Singlecell_Pooled.csv,k,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/Singlecell_Pooled.csv,frac,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/Singlecell_Pooled.csv,low,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+supplement/data/Singlecell_Pooled.csv,high,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Case,"Literal approved table column: Case. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,High MSR1+,"Literal approved table column: High MSR1+. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,High MSR1−,"Literal approved table column: High MSR1−. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Low MSR1+,"Literal approved table column: Low MSR1+. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Low MSR1−,"Literal approved table column: Low MSR1−. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Evaluable cells,"Literal approved table column: Evaluable cells. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
+main/data/Table_S7A.csv,Readout,"Literal approved table column: Readout. Saved display precision is retained; see table_notes.json for model, units and analysis population.",7,Empty remains missing; no imputation.
+main/data/Table_S7A.csv,1156 cm⁻¹,"Literal approved table column: 1156 cm⁻¹. Saved display precision is retained; see table_notes.json for model, units and analysis population.",7,Empty remains missing; no imputation.
+main/data/Table_S7A.csv,1514 cm⁻¹,"Literal approved table column: 1514 cm⁻¹. Saved display precision is retained; see table_notes.json for model, units and analysis population.",7,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,Band (cm⁻¹),"Literal approved table column: Band (cm⁻¹). Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,Test,"Literal approved table column: Test. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,Statistic,"Literal approved table column: Statistic. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,P,"Literal approved table column: P. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,BH-adjusted P,"Literal approved table column: BH-adjusted P. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,case,Original spatial case namespace GBM-A to GBM-D; not an inferred mapping to P IDs.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,niche,"Frozen spatial niche: P=perivascular, I=interstitial, R=rim.",12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,MSR1_positive_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,n_cells_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,n_genes_full_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,n_genes_without_MSR1_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,full5_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,without_MSR1_4_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,MSR1_only_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,other4_contribution_to_full5_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,MSR1_contribution_to_full5_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,MSR1_positive_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,n_cells_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,n_genes_full_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,n_genes_without_MSR1_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,full5_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,without_MSR1_4_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,MSR1_only_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,other4_contribution_to_full5_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,MSR1_contribution_to_full5_negative,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,delta_full5,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,delta_without_MSR1_4,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,delta_MSR1_only,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,delta_other4_contribution_to_full5,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,delta_MSR1_contribution_to_full5,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/Xenium_MSR1_Removal.csv,decomposition_error,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,bag_id,Unique patient-region identifier. It retains pairing within and across the released datasets.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,patient_id,Existing public patient pseudonym reused unchanged. Multiple bags can belong to one patient.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,region,Saved region. NAWM is labeled CWM for the current manuscript; no specimen reassignment.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,n_spectra,Number of spectra in the saved late-period bag. This is not a patient count.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,bag_score,"Saved top-3-mean score from the adopted temporal rerun, not a main-analysis OOF score. Original CSV decimal string retained.",22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,predicted_class,Saved tumor/non_tumor classification from the adopted temporal rerun. Plotting does not reselect a threshold.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,threshold_id,Links bags to the single fixed threshold in s2b_temporal_threshold.csv.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,threshold_id,Links bags to the single fixed threshold in s2b_temporal_threshold.csv.,1,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,aggregation,"top3mean: the fixed mean of the three highest spectrum predictions, already calculated in the saved run.",1,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,threshold,Fixed threshold 0.98162150382995605 (round-trip decimal). Not the historical threshold.,1,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,positive_comparator,A saved bag score greater than or equal to the fixed threshold corresponds to the positive class.,1,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,positive_class,tumor is the fixed positive prediction label.,1,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,negative_class,non_tumor is the fixed negative prediction label.,1,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,selection_data,Saved provenance: threshold selected using early-period IM/ED OOF bags only. No late data used for selection.,1,No missing values in this fixed export; no imputation.

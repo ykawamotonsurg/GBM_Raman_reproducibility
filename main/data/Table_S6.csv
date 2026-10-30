@@ -1,0 +1,4 @@
+Case,High MSR1+,High MSR1−,Low MSR1+,Low MSR1−,Evaluable cells
+Case 1,8,2,7,14,31
+Case 2,1,0,0,7,8
+Case 3,0,0,0,16,16

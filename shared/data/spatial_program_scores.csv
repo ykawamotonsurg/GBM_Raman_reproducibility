@@ -1,0 +1,127 @@
+case,group,program,program_label,niche,n_cells,score
+GBM-A,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,P,1970,0.793154926079006
+GBM-A,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,I,1384,0.9329340090476795
+GBM-A,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,R,5409,2.3278653082485072
+GBM-A,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,P,1886,0.6232563184019649
+GBM-A,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,I,1385,0.6941156385780798
+GBM-A,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,R,3210,1.7958346827756062
+GBM-A,MSR1+,Stress,HO-1 axis (HMOX1),P,1970,1.6943063789206316
+GBM-A,MSR1+,Stress,HO-1 axis (HMOX1),I,1384,1.9817255237651668
+GBM-A,MSR1+,Stress,HO-1 axis (HMOX1),R,5409,2.736856926736238
+GBM-A,MSR1-,Stress,HO-1 axis (HMOX1),P,1886,1.1270311845480812
+GBM-A,MSR1-,Stress,HO-1 axis (HMOX1),I,1385,1.2096810837792773
+GBM-A,MSR1-,Stress,HO-1 axis (HMOX1),R,3210,1.8833119842246744
+GBM-A,MSR1+,Opsonin_sensing,Opsonin sensing,P,1970,1.097587651145689
+GBM-A,MSR1+,Opsonin_sensing,Opsonin sensing,I,1384,1.172234679471896
+GBM-A,MSR1+,Opsonin_sensing,Opsonin sensing,R,5409,0.6137028113322903
+GBM-A,MSR1-,Opsonin_sensing,Opsonin sensing,P,1886,0.6140232950625109
+GBM-A,MSR1-,Opsonin_sensing,Opsonin sensing,I,1385,0.6337258872466446
+GBM-A,MSR1-,Opsonin_sensing,Opsonin sensing,R,3210,0.3071291523781915
+GBM-A,MSR1+,Lysosomal_degradation,Lysosomal degradation,P,1970,1.7387334025712982
+GBM-A,MSR1+,Lysosomal_degradation,Lysosomal degradation,I,1384,1.9260644161172953
+GBM-A,MSR1+,Lysosomal_degradation,Lysosomal degradation,R,5409,1.549046578102841
+GBM-A,MSR1-,Lysosomal_degradation,Lysosomal degradation,P,1886,1.0262821334353467
+GBM-A,MSR1-,Lysosomal_degradation,Lysosomal degradation,I,1385,1.0606703239540005
+GBM-A,MSR1-,Lysosomal_degradation,Lysosomal degradation,R,3210,0.8632548655582167
+GBM-A,MSR1+,Uptake_receptor,Receptor uptake,P,1970,1.562934476661551
+GBM-A,MSR1+,Uptake_receptor,Receptor uptake,I,1384,1.649234970449876
+GBM-A,MSR1+,Uptake_receptor,Receptor uptake,R,5409,1.3008537507023992
+GBM-A,MSR1-,Uptake_receptor,Receptor uptake,P,1886,0.44408238455738214
+GBM-A,MSR1-,Uptake_receptor,Receptor uptake,I,1385,0.46511468540449546
+GBM-A,MSR1-,Uptake_receptor,Receptor uptake,R,3210,0.24104703881608835
+GBM-A,MSR1+,Lipid_handling,Lipid handling,P,1970,0.6397596812202405
+GBM-A,MSR1+,Lipid_handling,Lipid handling,I,1384,0.7429500696359876
+GBM-A,MSR1+,Lipid_handling,Lipid handling,R,5409,1.4039976563708054
+GBM-A,MSR1-,Lipid_handling,Lipid handling,P,1886,0.3871516703268499
+GBM-A,MSR1-,Lipid_handling,Lipid handling,I,1385,0.39379498324517953
+GBM-A,MSR1-,Lipid_handling,Lipid handling,R,3210,0.9772376131549059
+GBM-A,MSR1+,Efflux_export,Efflux/export,P,1970,0.4301322136594089
+GBM-A,MSR1+,Efflux_export,Efflux/export,I,1384,0.44313165274954586
+GBM-A,MSR1+,Efflux_export,Efflux/export,R,5409,0.6639956774442278
+GBM-A,MSR1-,Efflux_export,Efflux/export,P,1886,0.2645654065189107
+GBM-A,MSR1-,Efflux_export,Efflux/export,I,1385,0.2825204270104676
+GBM-A,MSR1-,Efflux_export,Efflux/export,R,3210,0.3681916602065223
+GBM-B,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,P,10338,0.9761565633003638
+GBM-B,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,I,3413,1.0154738479621006
+GBM-B,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,R,2191,1.8442568837080109
+GBM-B,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,P,3358,0.8731239240541726
+GBM-B,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,I,2100,0.7562790363027059
+GBM-B,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,R,1824,1.2771531765994466
+GBM-B,MSR1+,Stress,HO-1 axis (HMOX1),P,10338,1.095699264918712
+GBM-B,MSR1+,Stress,HO-1 axis (HMOX1),I,3413,1.0219731779122683
+GBM-B,MSR1+,Stress,HO-1 axis (HMOX1),R,2191,1.7111252525412413
+GBM-B,MSR1-,Stress,HO-1 axis (HMOX1),P,3358,0.7037277943318281
+GBM-B,MSR1-,Stress,HO-1 axis (HMOX1),I,2100,0.5184845970196218
+GBM-B,MSR1-,Stress,HO-1 axis (HMOX1),R,1824,0.9112083568508973
+GBM-B,MSR1+,Opsonin_sensing,Opsonin sensing,P,10338,1.6870492084437831
+GBM-B,MSR1+,Opsonin_sensing,Opsonin sensing,I,3413,1.6915964096694416
+GBM-B,MSR1+,Opsonin_sensing,Opsonin sensing,R,2191,1.5186896977911006
+GBM-B,MSR1-,Opsonin_sensing,Opsonin sensing,P,3358,1.0850329627031354
+GBM-B,MSR1-,Opsonin_sensing,Opsonin sensing,I,2100,0.7105880967730233
+GBM-B,MSR1-,Opsonin_sensing,Opsonin sensing,R,1824,0.5528432017127267
+GBM-B,MSR1+,Lysosomal_degradation,Lysosomal degradation,P,10338,2.8502198108879853
+GBM-B,MSR1+,Lysosomal_degradation,Lysosomal degradation,I,3413,2.8077047230388947
+GBM-B,MSR1+,Lysosomal_degradation,Lysosomal degradation,R,2191,2.6463914747221664
+GBM-B,MSR1-,Lysosomal_degradation,Lysosomal degradation,P,3358,1.787248909628055
+GBM-B,MSR1-,Lysosomal_degradation,Lysosomal degradation,I,2100,1.2040684147137521
+GBM-B,MSR1-,Lysosomal_degradation,Lysosomal degradation,R,1824,1.0742733691468378
+GBM-B,MSR1+,Uptake_receptor,Receptor uptake,P,10338,1.7901553207171483
+GBM-B,MSR1+,Uptake_receptor,Receptor uptake,I,3413,1.7494394281154984
+GBM-B,MSR1+,Uptake_receptor,Receptor uptake,R,2191,1.7580214623391028
+GBM-B,MSR1-,Uptake_receptor,Receptor uptake,P,3358,0.5982697509178858
+GBM-B,MSR1-,Uptake_receptor,Receptor uptake,I,2100,0.3878775694263121
+GBM-B,MSR1-,Uptake_receptor,Receptor uptake,R,1824,0.318902945892418
+GBM-B,MSR1+,Lipid_handling,Lipid handling,P,10338,0.7501514845942957
+GBM-B,MSR1+,Lipid_handling,Lipid handling,I,3413,0.7514349446150381
+GBM-B,MSR1+,Lipid_handling,Lipid handling,R,2191,0.9110873296954342
+GBM-B,MSR1-,Lipid_handling,Lipid handling,P,3358,0.40103385828275157
+GBM-B,MSR1-,Lipid_handling,Lipid handling,I,2100,0.29942743528458365
+GBM-B,MSR1-,Lipid_handling,Lipid handling,R,1824,0.40703754726204827
+GBM-B,MSR1+,Efflux_export,Efflux/export,P,10338,1.0988849350814425
+GBM-B,MSR1+,Efflux_export,Efflux/export,I,3413,0.9773775353821292
+GBM-B,MSR1+,Efflux_export,Efflux/export,R,2191,1.1755270282688177
+GBM-B,MSR1-,Efflux_export,Efflux/export,P,3358,0.5468448041377397
+GBM-B,MSR1-,Efflux_export,Efflux/export,I,2100,0.3384940108491124
+GBM-B,MSR1-,Efflux_export,Efflux/export,R,1824,0.4691988901795029
+GBM-C,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,P,2533,0.83602944430858
+GBM-C,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,I,1265,1.0624950322022295
+GBM-C,MSR1+,HypoxiaGlyco,Hypoxia–glycolysis,R,2953,2.4533384008991796
+GBM-C,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,P,3152,0.7306688813035004
+GBM-C,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,I,1783,0.858414942793965
+GBM-C,MSR1-,HypoxiaGlyco,Hypoxia–glycolysis,R,2312,2.1655232679192253
+GBM-C,MSR1+,Stress,HO-1 axis (HMOX1),P,2533,0.672218418720217
+GBM-C,MSR1+,Stress,HO-1 axis (HMOX1),I,1265,0.8702131236319488
+GBM-C,MSR1+,Stress,HO-1 axis (HMOX1),R,2953,0.8298621223166679
+GBM-C,MSR1-,Stress,HO-1 axis (HMOX1),P,3152,0.4616920517849916
+GBM-C,MSR1-,Stress,HO-1 axis (HMOX1),I,1783,0.5303335911129133
+GBM-C,MSR1-,Stress,HO-1 axis (HMOX1),R,2312,0.6176826167821667
+GBM-C,MSR1+,Opsonin_sensing,Opsonin sensing,P,2533,1.1326342403749396
+GBM-C,MSR1+,Opsonin_sensing,Opsonin sensing,I,1265,1.1592254589125486
+GBM-C,MSR1+,Opsonin_sensing,Opsonin sensing,R,2953,0.7611519200715017
+GBM-C,MSR1-,Opsonin_sensing,Opsonin sensing,P,3152,0.723732810040046
+GBM-C,MSR1-,Opsonin_sensing,Opsonin sensing,I,1783,0.6455841120129372
+GBM-C,MSR1-,Opsonin_sensing,Opsonin sensing,R,2312,0.5394257971779242
+GBM-C,MSR1+,Lysosomal_degradation,Lysosomal degradation,P,2533,1.4474266678243324
+GBM-C,MSR1+,Lysosomal_degradation,Lysosomal degradation,I,1265,1.5346696890893519
+GBM-C,MSR1+,Lysosomal_degradation,Lysosomal degradation,R,2953,1.1942716562465485
+GBM-C,MSR1-,Lysosomal_degradation,Lysosomal degradation,P,3152,1.0108538106541622
+GBM-C,MSR1-,Lysosomal_degradation,Lysosomal degradation,I,1783,0.9447988931804415
+GBM-C,MSR1-,Lysosomal_degradation,Lysosomal degradation,R,2312,0.866096411003424
+GBM-C,MSR1+,Uptake_receptor,Receptor uptake,P,2533,1.3437254950142479
+GBM-C,MSR1+,Uptake_receptor,Receptor uptake,I,1265,1.4070365825433655
+GBM-C,MSR1+,Uptake_receptor,Receptor uptake,R,2953,1.1418730086219464
+GBM-C,MSR1-,Uptake_receptor,Receptor uptake,P,3152,0.3578000937780062
+GBM-C,MSR1-,Uptake_receptor,Receptor uptake,I,1783,0.3559145801955093
+GBM-C,MSR1-,Uptake_receptor,Receptor uptake,R,2312,0.2799916784698959
+GBM-C,MSR1+,Lipid_handling,Lipid handling,P,2533,0.5941056526435095
+GBM-C,MSR1+,Lipid_handling,Lipid handling,I,1265,0.5918194939902752
+GBM-C,MSR1+,Lipid_handling,Lipid handling,R,2953,0.769424321737471
+GBM-C,MSR1-,Lipid_handling,Lipid handling,P,3152,0.3664193763446261
+GBM-C,MSR1-,Lipid_handling,Lipid handling,I,1783,0.3637533236103763
+GBM-C,MSR1-,Lipid_handling,Lipid handling,R,2312,0.5498800495534796
+GBM-C,MSR1+,Efflux_export,Efflux/export,P,2533,0.27714558615458357
+GBM-C,MSR1+,Efflux_export,Efflux/export,I,1265,0.3984880259033369
+GBM-C,MSR1+,Efflux_export,Efflux/export,R,2953,0.4469524325708723
+GBM-C,MSR1-,Efflux_export,Efflux/export,P,3152,0.16300063594236128
+GBM-C,MSR1-,Efflux_export,Efflux/export,I,1783,0.20256534240284457
+GBM-C,MSR1-,Efflux_export,Efflux/export,R,2312,0.31907316529682506
