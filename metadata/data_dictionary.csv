@@ -1,4 +1,4 @@
-﻿file,column,description,rows,missing_value_policy
+file,column,description,rows,missing_value_policy
 supplement/data/bridge_descriptive_correlations.csv,scope,Saved source field; original numerical value/text retained. See figure_data_map.csv.,6,Empty remains missing; no imputation.
 supplement/data/bridge_descriptive_correlations.csv,n,Saved source field; original numerical value/text retained. See figure_data_map.csv.,6,Empty remains missing; no imputation.
 supplement/data/bridge_descriptive_correlations.csv,n_patients,Saved source field; original numerical value/text retained. See figure_data_map.csv.,6,Empty remains missing; no imputation.
@@ -66,10 +66,10 @@ supplement/data/mri_tumor_volume.csv,bias,"Saved Bland-Altman mean difference, m
 supplement/data/mri_tumor_volume.csv,loa_upper,"Saved upper Bland-Altman limit of agreement, mm3.",18,Empty remains missing; no imputation.
 supplement/data/mri_tumor_volume.csv,loa_lower,"Saved lower Bland-Altman limit of agreement, mm3.",18,Empty remains missing; no imputation.
 supplement/data/spatial_gene_shifts.csv,gene,Saved source field; original numerical value/text retained. See figure_data_map.csv.,36,Empty remains missing; no imputation.
-supplement/data/spatial_gene_shifts.csv,mean_I,Saved interstitial gene mean; exact upstream across-case aggregation unconfirmed.,36,Empty remains missing; no imputation.
-supplement/data/spatial_gene_shifts.csv,mean_R,Saved rim gene mean; exact upstream across-case aggregation unconfirmed.,36,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,mean_I,Interstitial gene-level mean used in Fig. S6B.,36,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,mean_R,Rim gene-level mean used in Fig. S6B.,36,Empty remains missing; no imputation.
 supplement/data/spatial_gene_shifts.csv,delta_R_minus_I,"Saved gene mean expression difference, Rim minus Interstitial; upstream aggregation unresolved.",36,Empty remains missing; no imputation.
-supplement/data/spatial_gene_shifts.csv,program_label,Approved human-readable spatial program name.,36,Empty remains missing; no imputation.
+supplement/data/spatial_gene_shifts.csv,program_label,Human-readable spatial program name.,36,Empty remains missing; no imputation.
 supplement/data/spatial_hypoxia.csv,case,Original spatial case namespace GBM-A to GBM-D; not an inferred mapping to P IDs.,4,Empty remains missing; no imputation.
 supplement/data/spatial_hypoxia.csv,n_tumor,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
 supplement/data/spatial_hypoxia.csv,mean12_log_expression,"Saved 12-gene domain-construction log-expression score, distinct from screening HypoxiaScore.",4,Empty remains missing; no imputation.
@@ -79,12 +79,12 @@ supplement/data/spatial_hypoxia.csv,baseline_p99,Saved eligible non-tumor p99 ba
 shared/data/spatial_program_scores.csv,case,Original spatial case namespace GBM-A to GBM-D; not an inferred mapping to P IDs.,126,Empty remains missing; no imputation.
 shared/data/spatial_program_scores.csv,group,Saved group/state label; interpretation is specific to the table.,126,Empty remains missing; no imputation.
 shared/data/spatial_program_scores.csv,program,Saved spatial program identifier; seven programs retained.,126,Empty remains missing; no imputation.
-shared/data/spatial_program_scores.csv,program_label,Approved human-readable spatial program name.,126,Empty remains missing; no imputation.
+shared/data/spatial_program_scores.csv,program_label,Human-readable spatial program name.,126,Empty remains missing; no imputation.
 shared/data/spatial_program_scores.csv,niche,"Frozen spatial niche: P=perivascular, I=interstitial, R=rim.",126,Empty remains missing; no imputation.
 shared/data/spatial_program_scores.csv,n_cells,Recorded cell count for this row and its specified group/niche or patient-region.,126,Empty remains missing; no imputation.
 shared/data/spatial_program_scores.csv,score,Saved spatial program mean of log-normalized expression; not uptake activity.,126,Empty remains missing; no imputation.
 supplement/data/spatial_sensitivity.csv,panel_label,Saved spatial sensitivity setting label; no mask recomputation.,49,Empty remains missing; no imputation.
-supplement/data/spatial_sensitivity.csv,program_label,Approved human-readable spatial program name.,49,Empty remains missing; no imputation.
+supplement/data/spatial_sensitivity.csv,program_label,Human-readable spatial program name.,49,Empty remains missing; no imputation.
 supplement/data/spatial_sensitivity.csv,n_cases,Saved source field; original numerical value/text retained. See figure_data_map.csv.,49,Empty remains missing; no imputation.
 supplement/data/spatial_sensitivity.csv,mean_effect,Saved case-mean Rim minus Interstitial score difference.,49,Empty remains missing; no imputation.
 supplement/data/spatial_sensitivity.csv,n_same,Saved sign-concordant case count; zero-handling rule is not changed.,49,Empty remains missing; no imputation.
@@ -180,20 +180,20 @@ supplement/data/Singlecell_Pooled.csv,k,Saved source field; original numerical v
 supplement/data/Singlecell_Pooled.csv,frac,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
 supplement/data/Singlecell_Pooled.csv,low,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
 supplement/data/Singlecell_Pooled.csv,high,Saved source field; original numerical value/text retained. See figure_data_map.csv.,4,Empty remains missing; no imputation.
-main/data/Table_S6.csv,Case,"Literal approved table column: Case. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
-main/data/Table_S6.csv,High MSR1+,"Literal approved table column: High MSR1+. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
-main/data/Table_S6.csv,High MSR1−,"Literal approved table column: High MSR1−. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
-main/data/Table_S6.csv,Low MSR1+,"Literal approved table column: Low MSR1+. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
-main/data/Table_S6.csv,Low MSR1−,"Literal approved table column: Low MSR1−. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
-main/data/Table_S6.csv,Evaluable cells,"Literal approved table column: Evaluable cells. Saved display precision is retained; see table_notes.json for model, units and analysis population.",3,Empty remains missing; no imputation.
-main/data/Table_S7A.csv,Readout,"Literal approved table column: Readout. Saved display precision is retained; see table_notes.json for model, units and analysis population.",7,Empty remains missing; no imputation.
-main/data/Table_S7A.csv,1156 cm⁻¹,"Literal approved table column: 1156 cm⁻¹. Saved display precision is retained; see table_notes.json for model, units and analysis population.",7,Empty remains missing; no imputation.
-main/data/Table_S7A.csv,1514 cm⁻¹,"Literal approved table column: 1514 cm⁻¹. Saved display precision is retained; see table_notes.json for model, units and analysis population.",7,Empty remains missing; no imputation.
-main/data/Table_S7B.csv,Band (cm⁻¹),"Literal approved table column: Band (cm⁻¹). Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
-main/data/Table_S7B.csv,Test,"Literal approved table column: Test. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
-main/data/Table_S7B.csv,Statistic,"Literal approved table column: Statistic. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
-main/data/Table_S7B.csv,P,"Literal approved table column: P. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
-main/data/Table_S7B.csv,BH-adjusted P,"Literal approved table column: BH-adjusted P. Saved display precision is retained; see table_notes.json for model, units and analysis population.",4,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Case,Case label.,3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,High MSR1+,"Number of carotenoid-high, MSR1-positive cells.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,High MSR1−,"Number of carotenoid-high, MSR1-negative cells.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Low MSR1+,"Number of carotenoid-low, MSR1-positive cells.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Low MSR1−,"Number of carotenoid-low, MSR1-negative cells.",3,Empty remains missing; no imputation.
+main/data/Table_S6.csv,Evaluable cells,Number of evaluable cells.,3,Empty remains missing; no imputation.
+main/data/Table_S7A.csv,Readout,Summary measure for paired culture measurements.,7,Empty remains missing; no imputation.
+main/data/Table_S7A.csv,1156 cm⁻¹,Summary at the 1156 cm^-1 Raman band.,7,Empty remains missing; no imputation.
+main/data/Table_S7A.csv,1514 cm⁻¹,Summary at the 1514 cm^-1 Raman band.,7,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,Band (cm⁻¹),Raman shift in cm^-1.,4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,Test,Statistical test label.,4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,Statistic,Reported test statistic.,4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,P,Reported unadjusted P value.,4,Empty remains missing; no imputation.
+main/data/Table_S7B.csv,BH-adjusted P,Reported Benjamini-Hochberg-adjusted P value.,4,Empty remains missing; no imputation.
 supplement/data/Xenium_MSR1_Removal.csv,case,Original spatial case namespace GBM-A to GBM-D; not an inferred mapping to P IDs.,12,Empty remains missing; no imputation.
 supplement/data/Xenium_MSR1_Removal.csv,niche,"Frozen spatial niche: P=perivascular, I=interstitial, R=rim.",12,Empty remains missing; no imputation.
 supplement/data/Xenium_MSR1_Removal.csv,MSR1_positive_positive,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
@@ -224,13 +224,55 @@ supplement/data/s2b_temporal_late_bags.csv,bag_id,Unique patient-region identifi
 supplement/data/s2b_temporal_late_bags.csv,patient_id,Existing public patient pseudonym reused unchanged. Multiple bags can belong to one patient.,22,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_late_bags.csv,region,Saved region. NAWM is labeled CWM for the current manuscript; no specimen reassignment.,22,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_late_bags.csv,n_spectra,Number of spectra in the saved late-period bag. This is not a patient count.,22,No missing values in this fixed export; no imputation.
-supplement/data/s2b_temporal_late_bags.csv,bag_score,"Saved top-3-mean score from the adopted temporal rerun, not a main-analysis OOF score. Original CSV decimal string retained.",22,No missing values in this fixed export; no imputation.
-supplement/data/s2b_temporal_late_bags.csv,predicted_class,Saved tumor/non_tumor classification from the adopted temporal rerun. Plotting does not reselect a threshold.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,bag_score,Temporal hold-out bag score: mean of the three highest spectrum-level predictions. Separate from the main-analysis OOF score.,22,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_late_bags.csv,predicted_class,Temporal hold-out bag classification (tumor or non_tumor) using the supplied threshold.,22,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_late_bags.csv,threshold_id,Links bags to the single fixed threshold in s2b_temporal_threshold.csv.,22,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_threshold.csv,threshold_id,Links bags to the single fixed threshold in s2b_temporal_threshold.csv.,1,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_threshold.csv,aggregation,"top3mean: the fixed mean of the three highest spectrum predictions, already calculated in the saved run.",1,No missing values in this fixed export; no imputation.
-supplement/data/s2b_temporal_threshold.csv,threshold,Fixed threshold 0.98162150382995605 (round-trip decimal). Not the historical threshold.,1,No missing values in this fixed export; no imputation.
+supplement/data/s2b_temporal_threshold.csv,threshold,Top-3-mean bag classification threshold; tumor if bag_score >= threshold.,1,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_threshold.csv,positive_comparator,A saved bag score greater than or equal to the fixed threshold corresponds to the positive class.,1,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_threshold.csv,positive_class,tumor is the fixed positive prediction label.,1,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_threshold.csv,negative_class,non_tumor is the fixed negative prediction label.,1,No missing values in this fixed export; no imputation.
 supplement/data/s2b_temporal_threshold.csv,selection_data,Saved provenance: threshold selected using early-period IM/ED OOF bags only. No late data used for selection.,1,No missing values in this fixed export; no imputation.
+main/data/samecell_labels.csv,patient_id,Shared patient pseudonym where an established correspondence exists.,76,Empty remains missing; no imputation in these tables.
+main/data/samecell_labels.csv,display_case,Case 1/2/3 as shown in Fig. 3B.,76,Empty remains missing; no imputation in these tables.
+main/data/samecell_labels.csv,samecell_id,Same-cell experiment identifier; not a UMAP cell identifier.,76,Empty remains missing; no imputation in these tables.
+main/data/samecell_labels.csv,carotenoid_high,Recorded high/low label; not reclassified.,76,Empty remains missing; no imputation in these tables.
+main/data/samecell_labels.csv,MSR1_pos_p99,"Primary MSR1 state: 1 positive, 0 negative; blank unevaluable.",76,Empty remains missing; no imputation in these tables.
+main/data/samecell_labels.csv,MSR1_pos_p995,Recorded sensitivity MSR1 state; not the primary state.,76,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,model,THP1 or U87 culture model.,44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,experiment_id,Experimental day block; not a patient date.,44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,measurement_id,Measurement identifier within an experimental block.,44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,unit_id,Unique culture unit retaining paired conditions.,44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,Condition,Recorded culture condition.,44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,peak,Raman band in cm^-1.,44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,actual_wavenumber,"Measured wavenumber used for the peak value, cm^-1.",44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,mean_intensity,Saved baseline-corrected mean signal for the measurement unit.,44,Empty remains missing; no imputation in these tables.
+main/data/culture_unit_means.csv,n_spectra,Number of spectra contributing to the unit mean.,44,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,n,Number of included observations.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,peak_half_width,"Half width of the peak band, cm^-1.",1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,SD_denominator,Denominator used for the standard deviation.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,score,Stored score definition.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,quantile_type,Recorded R quantile type for the fixed cutoff.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,quantile_probability,Recorded quantile probability for the fixed cutoff.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,threshold,Fixed score cutoff; no reselection.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,boundary,Stored cutoff comparison operator.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,ties_at_cutoff,Number of observations exactly at the cutoff.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,n_high,Number of high cells in the fixed classification.,1,Empty remains missing; no imputation in these tables.
+shared/data/carotenoid_threshold.csv,actual_fraction,Fraction classified high in the included cell set.,1,Empty remains missing; no imputation in these tables.
+shared/data/global_peak_standardization.csv,peak,Raman band in cm^-1.,2,Empty remains missing; no imputation in these tables.
+shared/data/global_peak_standardization.csv,mean,Global mean of the included cell peak values.,2,Empty remains missing; no imputation in these tables.
+shared/data/global_peak_standardization.csv,sample_SD,Sample standard deviation with n-1 denominator.,2,Empty remains missing; no imputation in these tables.
+shared/data/global_peak_standardization.csv,n,Number of included observations.,2,Empty remains missing; no imputation in these tables.
+shared/data/spatial_gene_sets.csv,program,Gene-program identifier.,38,Empty remains missing; no imputation in these tables.
+shared/data/spatial_gene_sets.csv,program_label,Saved source field; see DATA.md for its analysis unit.,38,Empty remains missing; no imputation in these tables.
+shared/data/spatial_gene_sets.csv,gene,Gene symbol in the program definition.,38,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,case,"Spatial case namespace, independent of P IDs.",168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,niche,Saved spatial niche code.,168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,MSR1_positive,Saved spatial MSR1 state.,168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,program,Gene-program identifier.,168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,n_cells,Number of contributing cells.,168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,n_genes,Number of contributing genes.,168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,genes_used,Semicolon-delimited genes used in the stored score.,168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,genes_absent,Missing program genes; empty when none were listed.,168,Empty remains missing; no imputation in these tables.
+supplement/data/spatial_program_scores_all4.csv,mean_score,Saved mean program score for the case/niche/state.,168,Empty remains missing; no imputation in these tables.

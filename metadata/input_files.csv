@@ -1,4 +1,4 @@
-﻿file,used_for,sha256,data_level
+file,used_for,sha256,data_level
 main/data/Culture_AllConditions.csv,Fig.3C,3c3649ff72d67f5206762546b42c66f28ac63b2c80c38c6d3b6a0eff26c4f29c,"Fixed saved coordinates, labels, scores, summaries or statistical results; not original measurements"
 main/data/Fucoidan_Pairs.csv,Fig.3D,57a8e4fa9bc408cdf056b0431a5861985a1fc8bcd26a21cd0158dff1a200eafd,"Fixed saved coordinates, labels, scores, summaries or statistical results; not original measurements"
 main/data/Singlecell_CaseRegion.csv,Fig.2D,8736baeea73c480649bd9539393318c808a1b80dbc613b77446302d53044027b,"Fixed saved coordinates, labels, scores, summaries or statistical results; not original measurements"
@@ -27,5 +27,15 @@ supplement/data/spatial_gene_shifts.csv,Fig.S6B,2d91f1678b0ea1e790b263911030cd9d
 supplement/data/spatial_hypoxia.csv,Fig.S4B,c8c716f00227a286a893581f42ee6394518b43d9165c57a3230d1887b7dc4970,"Fixed saved coordinates, labels, scores, summaries or statistical results; not original measurements"
 supplement/data/spatial_sensitivity.csv,Fig.S4C,123099ab775142ebc39c578a5d02e4871b7ae81ae889954109eb6fc3429da1b6,"Fixed saved coordinates, labels, scores, summaries or statistical results; not original measurements"
 supplement/data/tissue_cell_bridge.csv,Fig.S3D,3314e2608f3238db93e94242436cc75285d0e04fab14e97732fc892102e8a758,"Fixed saved coordinates, labels, scores, summaries or statistical results; not original measurements"
-supplement/data/s2b_temporal_late_bags.csv,Fig.S2B,86fcb146a5cad96f413e8f91817cd8b8d4906f42863f15fa43ad6e7cbee58c8f,Fixed adopted temporal hold-out result; separate from main-analysis OOF scores
-supplement/data/s2b_temporal_threshold.csv,Fig.S2B,a7bfb77584e96cb044f87f90eaff9d18ecaebd7bc71fda91e91a5740fe6492a6,Fixed adopted temporal hold-out result; separate from main-analysis OOF scores
+supplement/data/s2b_temporal_late_bags.csv,Fig.S2B,86fcb146a5cad96f413e8f91817cd8b8d4906f42863f15fa43ad6e7cbee58c8f,Temporal hold-out bag predictions and classification threshold
+supplement/data/s2b_temporal_threshold.csv,Fig.S2B,a7bfb77584e96cb044f87f90eaff9d18ecaebd7bc71fda91e91a5740fe6492a6,Temporal hold-out bag predictions and classification threshold
+main/data/samecell_labels.csv,Fig.3B;Table S6,6b9fbf6b9ba9212677cbb67ef46acd72e7519edad5d08dccc9cb51663736c4c6,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+main/data/culture_unit_means.csv,Fig.3C;Fig.3D;Table S7,6173118b2c0b3aa57482cdba34ef98d4438d75758ec5f43babf7133ba70cecfc,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+shared/data/carotenoid_threshold.csv,Fig.2C;Fig.2D;Fig.S3C,4293993e2228350e42d63aa351b375496049f4d1c9bd4050fe2a7d2e5207f543,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+shared/data/global_peak_standardization.csv,Fig.2C;Fig.S3C,f10288937367c0b913d4de571efdd0f3b74cce3fd34dfc5b98a8e524b0758580,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+shared/data/spatial_gene_sets.csv,Fig.4B;Figs.S4-S6,55c0a64f3ef3408ce9a2d62ffe0eba1776f2e48f14c461c8efef329b42e211e1,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+supplement/data/spatial_program_scores_all4.csv,Figs.S4-S6,e9d432c35b584a8e3ba724e8d58a836e29fbe35bac1b8fb3111c8dd64a14face,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+supplement/analysis/s2b/input.rds,"Fig.S2B: model-input spectra, folds and predictions",6c10618cb218f814e8ca13a24c09cb7e4a726c3abb66eaa894fca0e8d24acb92,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+supplement/analysis/s2b/preprocessing.rds,Fig.S2B: saved numerical preprocessing,6aa9ec2855d7994675492faa83b7640ba4ce221fe4474719be06f855f8b88922,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+supplement/analysis/s2b/model.json,Fig.S2B: saved native model,93b77098511629759554249ec8d8cc95de503c677f0cfe31f5a85fbdca314d18,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
+supplement/analysis/s2b/configuration.json,Fig.S2B: fixed settings and environment,590b9043b5a35ab8ffe685f3f6b9b2c5108b90336cf697e390715814cf42b9fd,"Saved processed inputs, method definitions or fitted parameters; units described in DATA.md"
