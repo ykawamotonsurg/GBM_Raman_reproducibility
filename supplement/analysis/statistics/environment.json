@@ -1,0 +1,13 @@
+{
+  "R": "R version 4.5.2 (2025-10-31 ucrt)",
+  "packages": {
+    "lmerTest": "3.2-0",
+    "lme4": "1.1-38",
+    "pbkrtest": "0.5.5",
+    "readr": "2.2.0",
+    "dplyr": "1.2.1",
+    "Matrix": "1.7-4"
+  },
+  "source": "Environment recorded with the saved statistical analysis",
+  "packaged_adapter_execution": "Syntax checked; statistical models and tests not rerun during packaging"
+}
