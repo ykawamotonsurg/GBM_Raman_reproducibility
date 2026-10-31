@@ -9,7 +9,7 @@
     "Matrix": "1.7-4"
   },
   "source": "Environment recorded with the saved statistical analysis",
-  "packaged_adapter_execution": "MRI-only statistical expressions checked using the supplied recorded association input; saved outputs match. Non-MRI scopes were not rerun.",
+  "packaged_adapter_execution": "MRI association and rater agreement executed using the shared measured-volume input. Non-MRI statistical scopes were not rerun.",
   "MRI_execution": {
     "R": "R version 4.5.2 (2025-10-31 ucrt)",
     "packages": {
@@ -33,6 +33,21 @@
       "Inversion",
       "Rejection"
     ],
-    "baseline_comparison": "The supplied MRI case input reproduces all compared saved MRI summary and bootstrap numeric values exactly."
+    "input": "MRI_CaseData.csv: derive enhancing fraction from rater 1 total and necrotic volumes; fixed CE high/total counts."
+  },
+  "MRI_agreement_execution": {
+    "R": "R version 4.5.2 (2025-10-31 ucrt)",
+    "packages": {
+      "psych": "2.6.9",
+      "lme4": "1.1-38",
+      "mnormt": "2.1.2",
+      "GPArotation": "2026.8-2",
+      "readr": "2.2.0",
+      "dplyr": "1.2.1",
+      "tibble": "3.3.1"
+    },
+    "method": "Saved Pearson, psych::ICC (ICC2 and ICC2k), and Bland-Altman expressions retained.",
+    "baseline_check": "Saved agreement values reproduced within relative tolerance 1e-8 and absolute tolerance 1e-10 before the input update.",
+    "historical_psych_version": "Not documented in the available original execution records; the version above records this execution."
   }
 }

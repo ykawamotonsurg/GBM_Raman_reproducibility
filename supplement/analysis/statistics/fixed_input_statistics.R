@@ -16,7 +16,16 @@ rd<-function(p)as.data.frame(read_csv(file.path(B,p),show_col_types=FALSE))
 wr<-function(x,p)write_csv(x,file.path(O,p),na='')
 mri<-rd('supplement/data/MRI_CaseData.csv')
 stopifnot(nrow(mri)==18,!anyDuplicated(mri$patient_id),all(is.finite(mri$enhance_fraction)),all(mri$n_cells>0),all(mri$n_high>=0 & mri$n_high<=mri$n_cells),all(abs(mri$fraction-mri$n_high/mri$n_cells)<1e-12))
-# Use the recorded association fractions as supplied; plotting and analysis do not rederive them.
+# The same confirmed rater volumes feed agreement and association analyses.
+volume_cols<-c('rater1_total_volume_mm3','rater1_necrotic_volume_mm3','rater2_total_volume_mm3','rater2_necrotic_volume_mm3')
+stopifnot(all(volume_cols%in%names(mri)),all(is.finite(as.matrix(mri[,volume_cols]))))
+for(r in 1:2){
+ total<-mri[[paste0('rater',r,'_total_volume_mm3')]];nec<-mri[[paste0('rater',r,'_necrotic_volume_mm3')]]
+ stopifnot(all(total>0),all(nec>=0 & nec<total))
+}
+derived<-(mri$rater1_total_volume_mm3-mri$rater1_necrotic_volume_mm3)/mri$rater1_total_volume_mm3
+stopifnot(all(abs(derived-mri$enhance_fraction)<1e-12))
+mri$enhance_fraction<-derived
 if(execution_scope=='all'){
 case<-rd('main/data/Singlecell_CaseRegion.csv')
 bridge<-rd('supplement/data/tissue_cell_bridge.csv')

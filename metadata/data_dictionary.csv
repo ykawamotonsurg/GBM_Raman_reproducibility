@@ -160,10 +160,10 @@ main/data/Fucoidan_Pairs.csv,ratio_note,Saved source field; original numerical v
 main/data/Fucoidan_Pairs.csv,decreased,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
 main/data/Fucoidan_Pairs.csv,absolute_difference_rank,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
 supplement/data/MRI_CaseData.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,18,Empty remains missing; no imputation.
-supplement/data/MRI_CaseData.csv,enhance_fraction,Recorded MRI enhancing fraction used for the association analysis; read directly from this table.,18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,enhance_fraction,Rater 1 enhancing fraction: (rater1_total_volume_mm3 - rater1_necrotic_volume_mm3) / rater1_total_volume_mm3; verified by the association script.,18,Empty remains missing; no imputation.
 supplement/data/MRI_CaseData.csv,n_cells,Recorded cell count for this row and its specified group/niche or patient-region.,18,Empty remains missing; no imputation.
 supplement/data/MRI_CaseData.csv,n_high,Saved source field; original numerical value/text retained. See figure_data_map.csv.,18,Empty remains missing; no imputation.
-supplement/data/MRI_CaseData.csv,fraction,"Fixed CE carotenoid-high fraction, n_high / n_cells; current cell classification and denominators retained.",18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,fraction,"Fixed CE carotenoid-high fraction, n_high / n_cells; cell classifications and denominators are unchanged.",18,Empty remains missing; no imputation.
 main/data/Singlecell_CaseRegion.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,38,Empty remains missing; no imputation.
 main/data/Singlecell_CaseRegion.csv,cohort,Saved source field; original numerical value/text retained. See figure_data_map.csv.,38,Empty remains missing; no imputation.
 main/data/Singlecell_CaseRegion.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",38,Empty remains missing; no imputation.
@@ -276,3 +276,7 @@ supplement/data/spatial_program_scores_all4.csv,n_genes,Number of contributing g
 supplement/data/spatial_program_scores_all4.csv,genes_used,Semicolon-delimited genes used in the stored score.,168,Empty remains missing; no imputation in these tables.
 supplement/data/spatial_program_scores_all4.csv,genes_absent,Missing program genes; empty when none were listed.,168,Empty remains missing; no imputation in these tables.
 supplement/data/spatial_program_scores_all4.csv,mean_score,Saved mean program score for the case/niche/state.,168,Empty remains missing; no imputation in these tables.
+supplement/data/MRI_CaseData.csv,rater1_total_volume_mm3,Rater 1 measured total tumor volume in mm3; shared MRI agreement and association input.,18,All 18 measurements present; no imputation.
+supplement/data/MRI_CaseData.csv,rater1_necrotic_volume_mm3,Rater 1 measured necrotic volume in mm3; shared MRI agreement and association input.,18,All 18 measurements present; no imputation.
+supplement/data/MRI_CaseData.csv,rater2_total_volume_mm3,Rater 2 measured total tumor volume in mm3.,18,All 18 measurements present; no imputation.
+supplement/data/MRI_CaseData.csv,rater2_necrotic_volume_mm3,Rater 2 measured necrotic volume in mm3.,18,All 18 measurements present; no imputation.

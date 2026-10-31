@@ -62,7 +62,7 @@ Supplementary PNGs are written to `results_supplement/supplement/numeric/`. Use 
 
 The [temporal evaluation files](supplement/analysis/s2b/README.md) provide the fixed S2B inputs, early OOF and late predictions, fold assignments, preprocessing parameters, native XGBoost model and method functions. Saved-model inference can be reproduced without training.
 
-[Statistical method code](supplement/analysis/statistics/fixed_input_statistics.R) uses the supplied case-level tables for the single-cell trend, tissue–cell association and MRI analyses. Its [recorded environment](supplement/analysis/statistics/environment.json) is included. The MRI statistical calculations have been checked using the supplied inputs; the single-cell trend and tissue–cell association scopes have not been rerun for this package. Statistical analysis is separate from plotting.
+[Statistical method code](supplement/analysis/statistics/fixed_input_statistics.R) uses the supplied case-level tables for the single-cell trend, tissue–cell association and MRI analyses. Its [recorded environment](supplement/analysis/statistics/environment.json) is included. The MRI association and rater-agreement calculations have been run using the same supplied measured-volume input; the single-cell trend and tissue–cell association scopes have not been rerun for this package. Statistical analysis is separate from plotting.
 
 To reproduce the MRI association statistics only (R 4.5.2; `readr` and `dplyr`):
 
@@ -70,7 +70,15 @@ To reproduce the MRI association statistics only (R 4.5.2; `readr` and `dplyr`):
 Rscript supplement/analysis/statistics/fixed_input_statistics.R . results_mri mri
 ```
 
-The command reads the recorded enhancing fractions and fixed CE high/total cell counts from [MRI_CaseData.csv](supplement/data/MRI_CaseData.csv). It writes Spearman statistics and bootstrap intervals, the quasi-binomial model, the case-bootstrap OR interval, and leave-one-out results to a new directory.
+[MRI_CaseData.csv](supplement/data/MRI_CaseData.csv) is the shared input for MRI association and rater agreement. It contains both raters' total and necrotic volumes (mm³) and fixed CE high/total cell counts. Enhancing volume is `total - necrotic`; the association uses rater 1's enhancing fraction `(total - necrotic) / total`. The command verifies the stored fraction against these volumes and writes Spearman statistics and bootstrap intervals, the quasi-binomial model, the case-bootstrap OR interval, and leave-one-out results to a new directory.
+
+To regenerate the saved rater-agreement tables for Fig. S7A (also requires `psych`, `lme4` and `tibble`; versions in the recorded environment):
+
+```sh
+Rscript supplement/analysis/statistics/mri_agreement.R . results_mri_agreement
+```
+
+This command uses the same case-level volumes to write Pearson and ICC(2,1) results and Bland–Altman plot tables. Both MRI analysis commands write to new directories; they do not overwrite the supplied plotting CSVs.
 
 ## Data scope
 
