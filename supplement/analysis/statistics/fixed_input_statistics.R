@@ -1,20 +1,26 @@
 # Statistical methods using fixed, de-identified analysis inputs.
 # Adapted from the saved analysis script. The model formulas, estimation methods,
 # interval rules, bootstrap counts and seeds below are retained.
-# Not called by reproduce.py. This packaging task did not rerun these analyses.
+# Separate from reproduce.py. Optional third argument: mri (MRI only) or all (default).
 options(warn=1,digits=17)
-suppressPackageStartupMessages({library(readr);library(dplyr);library(lmerTest)})
+suppressPackageStartupMessages({library(readr);library(dplyr)})
 args<-commandArgs(trailingOnly=TRUE)
-if(length(args)!=2)stop('Usage: Rscript fixed_input_statistics.R REPOSITORY_ROOT NEW_OUTPUT_DIRECTORY')
+if(!length(args)%in%c(2,3))stop('Usage: Rscript fixed_input_statistics.R REPOSITORY_ROOT NEW_OUTPUT_DIRECTORY [mri|all]')
+execution_scope<-if(length(args)==3)args[3] else 'all'
+if(!execution_scope%in%c('mri','all'))stop('Scope must be mri or all')
+if(execution_scope=='all')suppressPackageStartupMessages(library(lmerTest))
 B<-normalizePath(args[1],winslash='/',mustWork=TRUE);O<-args[2]
 if(dir.exists(O))stop('Choose a new output directory')
 for(d in c('statistics','records','rds'))dir.create(file.path(O,d),recursive=TRUE,showWarnings=FALSE)
 rd<-function(p)as.data.frame(read_csv(file.path(B,p),show_col_types=FALSE))
 wr<-function(x,p)write_csv(x,file.path(O,p),na='')
+mri<-rd('supplement/data/MRI_CaseData.csv')
+stopifnot(nrow(mri)==18,!anyDuplicated(mri$patient_id),all(is.finite(mri$enhance_fraction)),all(mri$n_cells>0),all(mri$n_high>=0 & mri$n_high<=mri$n_cells),all(abs(mri$fraction-mri$n_high/mri$n_cells)<1e-12))
+# Use the recorded association fractions as supplied; plotting and analysis do not rederive them.
+if(execution_scope=='all'){
 case<-rd('main/data/Singlecell_CaseRegion.csv')
 bridge<-rd('supplement/data/tissue_cell_bridge.csv')
-mri<-rd('supplement/data/MRI_CaseData.csv')
-stopifnot(nrow(case)==38,nrow(bridge)==37,nrow(mri)==18)
+stopifnot(nrow(case)==38,nrow(bridge)==37)
 trend<-list();adj<-list();corr<-list()
 for(scope in c('all38','matched37')){
  z<-if(scope=='all38')case else bridge;z$patient_id<-factor(z$patient_id)
@@ -39,6 +45,7 @@ for(scope in c('all37','GBM33','CWM','ED','IM','CE')){
  }
 }
 wr(bind_rows(corr),'statistics/bridge_descriptive_correlations.csv');wr(bind_rows(adj),'statistics/bridge_adjusted_REML_KR.csv')
+}
 q6<-function(x)as.numeric(quantile(x,c(.025,.5,.975),type=6,na.rm=TRUE))
 sp<-cor.test(mri$enhance_fraction,mri$fraction,method='spearman',exact=FALSE)
 set.seed(20260315);br<-replicate(5000,{i<-sample.int(18,18,replace=TRUE);suppressWarnings(cor(mri$enhance_fraction[i],mri$fraction[i],method='spearman'))});ci<-q6(br)
@@ -50,3 +57,8 @@ wr(data.frame(B=5000,finite_draws=sum(is.finite(bo)),seed=20260316,OR_median=oc[
 loo<-bind_rows(lapply(seq_len(18),function(i){z<-mri[-i,];tt<-cor.test(z$enhance_fraction,z$fraction,method='spearman',exact=FALSE);data.frame(omitted_patient_id=mri$patient_id[i],rho=unname(tt$estimate),P=tt$p.value)}))
 wr(loo,'statistics/MRI_all18_leave_one_out.csv');wr(data.frame(rho_min=min(loo$rho),rho_max=max(loo$rho),P_min=min(loo$P),P_max=max(loo$P),all_positive=all(loo$rho>0),all_P_below_05=all(loo$P<.05)),'statistics/MRI_leave_one_out_summary.csv')
 wr(data.frame(draw=1:5000,Spearman_rho=br,OR_per_10pp=bo),'statistics/MRI_bootstrap_draws.csv')
+
+saveRDS(f,file.path(O,'rds','MRI_quasibinomial_model.rds'))
+writeLines(capture.output(sessionInfo()),file.path(O,'records','sessionInfo.txt'))
+writeLines(capture.output(RNGkind()),file.path(O,'records','RNGkind.txt'))
+writeLines(c(paste('scope:',execution_scope),'Spearman bootstrap: 5000; seed 20260315; quantile type 6','OR bootstrap: 5000; seed 20260316; quantile type 6'),file.path(O,'records','execution_settings.txt'))

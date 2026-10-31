@@ -62,7 +62,15 @@ Supplementary PNGs are written to `results_supplement/supplement/numeric/`. Use 
 
 The [temporal evaluation files](supplement/analysis/s2b/README.md) provide the fixed S2B inputs, early OOF and late predictions, fold assignments, preprocessing parameters, native XGBoost model and method functions. Saved-model inference can be reproduced without training.
 
-[Statistical method code](supplement/analysis/statistics/fixed_input_statistics.R) uses the supplied case-level tables for the single-cell trend, tissue–cell association and MRI analyses. Its [recorded environment](supplement/analysis/statistics/environment.json) is included. This adapter was syntax-checked; those statistical analyses were not rerun for this package. It is separate from the plotting commands.
+[Statistical method code](supplement/analysis/statistics/fixed_input_statistics.R) uses the supplied case-level tables for the single-cell trend, tissue–cell association and MRI analyses. Its [recorded environment](supplement/analysis/statistics/environment.json) is included. The MRI statistical calculations have been checked using the supplied inputs; the single-cell trend and tissue–cell association scopes have not been rerun for this package. Statistical analysis is separate from plotting.
+
+To reproduce the MRI association statistics only (R 4.5.2; `readr` and `dplyr`):
+
+```sh
+Rscript supplement/analysis/statistics/fixed_input_statistics.R . results_mri mri
+```
+
+The command reads the recorded enhancing fractions and fixed CE high/total cell counts from [MRI_CaseData.csv](supplement/data/MRI_CaseData.csv). It writes Spearman statistics and bootstrap intervals, the quasi-binomial model, the case-bootstrap OR interval, and leave-one-out results to a new directory.
 
 ## Data scope
 

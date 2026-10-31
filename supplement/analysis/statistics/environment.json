@@ -9,5 +9,30 @@
     "Matrix": "1.7-4"
   },
   "source": "Environment recorded with the saved statistical analysis",
-  "packaged_adapter_execution": "Syntax checked; statistical models and tests not rerun during packaging"
+  "packaged_adapter_execution": "MRI-only statistical expressions checked using the supplied recorded association input; saved outputs match. Non-MRI scopes were not rerun.",
+  "MRI_execution": {
+    "R": "R version 4.5.2 (2025-10-31 ucrt)",
+    "packages": {
+      "readr": "2.2.0",
+      "dplyr": "1.2.1",
+      "stats": "4.5.2"
+    },
+    "scope": "mri",
+    "Spearman_bootstrap": {
+      "B": 5000,
+      "seed": 20260315,
+      "quantile_type": 6
+    },
+    "OR_bootstrap": {
+      "B": 5000,
+      "seed": 20260316,
+      "quantile_type": 6
+    },
+    "RNGkind": [
+      "Mersenne-Twister",
+      "Inversion",
+      "Rejection"
+    ],
+    "baseline_comparison": "The supplied MRI case input reproduces all compared saved MRI summary and bootstrap numeric values exactly."
+  }
 }

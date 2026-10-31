@@ -160,10 +160,10 @@ main/data/Fucoidan_Pairs.csv,ratio_note,Saved source field; original numerical v
 main/data/Fucoidan_Pairs.csv,decreased,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
 main/data/Fucoidan_Pairs.csv,absolute_difference_rank,Saved source field; original numerical value/text retained. See figure_data_map.csv.,12,Empty remains missing; no imputation.
 supplement/data/MRI_CaseData.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,18,Empty remains missing; no imputation.
-supplement/data/MRI_CaseData.csv,enhance_fraction,Saved source field; original numerical value/text retained. See figure_data_map.csv.,18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,enhance_fraction,Recorded MRI enhancing fraction used for the association analysis; read directly from this table.,18,Empty remains missing; no imputation.
 supplement/data/MRI_CaseData.csv,n_cells,Recorded cell count for this row and its specified group/niche or patient-region.,18,Empty remains missing; no imputation.
 supplement/data/MRI_CaseData.csv,n_high,Saved source field; original numerical value/text retained. See figure_data_map.csv.,18,Empty remains missing; no imputation.
-supplement/data/MRI_CaseData.csv,fraction,Saved source field; original numerical value/text retained. See figure_data_map.csv.,18,Empty remains missing; no imputation.
+supplement/data/MRI_CaseData.csv,fraction,"Fixed CE carotenoid-high fraction, n_high / n_cells; current cell classification and denominators retained.",18,Empty remains missing; no imputation.
 main/data/Singlecell_CaseRegion.csv,patient_id,Stable P pseudonym shared only across confirmed patient links; distinct date-key collisions remain separate.,38,Empty remains missing; no imputation.
 main/data/Singlecell_CaseRegion.csv,cohort,Saved source field; original numerical value/text retained. See figure_data_map.csv.,38,Empty remains missing; no imputation.
 main/data/Singlecell_CaseRegion.csv,region,"Saved anatomical region: CWM, ED, IM or CE; original inclusion and ordering retained.",38,Empty remains missing; no imputation.

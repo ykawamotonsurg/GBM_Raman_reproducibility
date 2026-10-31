@@ -24,6 +24,28 @@ PEAKCOL=dict(zip(REG,['#F8766D','#7CAE00','#00BFC4','#C77CFF']))
 PROGRAMS=['HypoxiaGlyco','Stress','Opsonin_sensing','Lysosomal_degradation','Uptake_receptor','Lipid_handling','Efflux_export']
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'savefig.facecolor':'white'})
 
+def saved_correlation_label(row, with_p=False):
+    """Format one saved summary; no correlations or tests are run here."""
+    n, rho = float(row['n']), float(row['rho'])
+    if not np.isfinite(n) or n < 1 or not n.is_integer() or not np.isfinite(rho) or not -1 <= rho <= 1:
+        raise ValueError('Invalid saved correlation n or rho')
+    label = f'n = {int(n)}, Spearman rho = {rho:.3f}'
+    if with_p:
+        p = float(row['P'])
+        if not np.isfinite(p) or not 0 <= p <= 1:
+            raise ValueError('Invalid saved correlation P')
+        label = f'n = {int(n)}; Spearman rho = {rho:.3f}; P = {p:.3g}'
+    return label
+
+def bridge_title(stats):
+    rows = stats.set_index('scope', verify_integrity=True)
+    return 'All regions: ' + saved_correlation_label(rows.loc['all37']) + '\nED/IM/CE: ' + saved_correlation_label(rows.loc['GBM33'])
+
+def mri_title(stats):
+    if len(stats) != 1:
+        raise ValueError('Expected exactly one saved MRI Spearman summary')
+    return saved_correlation_label(stats.iloc[0], with_p=True)
+
 def run(root,output):
     root=Path(root);out=Path(output)/'numeric';out.mkdir(parents=True,exist_ok=True)
     def read(name,source=False):return pd.read_csv(resolve(root,('data/source_data/' if source else 'data/processed/')+name),float_precision='round_trip')
@@ -94,7 +116,7 @@ def run(root,output):
     z=read('tissue_cell_bridge.csv');fig,ax=axnew(7,4.5)
     for r in REG:
         q=z[z.region==r];ax.scatter(q.frac_caro_high*100,q.bag_logit,c=COL[r],label=r,s=25)
-    ax.set(xlabel='Carotenoid-high fraction (%)',ylabel='Tissue Raman score (logit)',title='All regions: n = 37, Spearman rho = 0.470\nED/IM/CE: n = 33, Spearman rho = 0.368');ax.legend(title='Region',bbox_to_anchor=(1,1),frameon=False)
+    ax.set(xlabel='Carotenoid-high fraction (%)',ylabel='Tissue Raman score (logit)',title=bridge_title(read('bridge_descriptive_correlations.csv')));ax.legend(title='Region',bbox_to_anchor=(1,1),frameon=False)
     save(fig,'Fig_S3D',['supplement/data/tissue_cell_bridge.csv','supplement/data/bridge_descriptive_correlations.csv'])
     z=read('spatial_hypoxia.csv').sort_values('case');fig,ax=axnew(5,4);ax.bar(z['case'],z.mean12_log_expression,color='#555555');ax.set(ylabel='Mean 12-gene log expression',ylim=(0,1.6))
     save(fig,'Fig_S4B',['supplement/data/spatial_hypoxia.csv'],'Domain-construction 12-gene saved scores, not screening HypoxiaScore')
@@ -142,6 +164,6 @@ def run(root,output):
         ax.set(title='Bland–Altman: '+title.lower(),xlabel='Mean of two raters (mm³)',ylabel='Difference (rater 2 − rater 1) (mm³)')
     save(fig,'Fig_S7A',['supplement/data/mri_tumor_volume.csv','supplement/data/mri_necrotic_volume.csv','supplement/data/mri_agreement.csv'],'Invert saved means/differences algebraically; replay descriptive lm display; all ICC, Pearson, bias and LoA values loaded')
     z=read('MRI_CaseData.csv',True);fig,ax=axnew(6.2,4.6);x=z.enhance_fraction.to_numpy();y=100*z.fraction.to_numpy();ax.scatter(x,y,c='#303030',s=25);xx=np.array([x.min(),x.max()]);ax.plot(xx,np.polyval(np.polyfit(x,y,1),xx),c='#303030',lw=1)
-    ax.set(xlim=(0,1.01),ylim=(-2,65),xlabel=r'Enhancing fraction, $V_{CE}/(V_{CE}+V_{NEC})$',ylabel='CE carotenoid-high fraction (%)',title='n = 18; Spearman rho = 0.649; P = 0.00354')
+    ax.set(xlim=(0,1.01),ylim=(-2,65),xlabel=r'Enhancing fraction, $V_{CE}/(V_{CE}+V_{NEC})$',ylabel='CE carotenoid-high fraction (%)',title=mri_title(read('mri_spearman.csv')))
     save(fig,'Fig_S7B',['supplement/data/MRI_CaseData.csv','supplement/data/mri_spearman.csv'],'Replay existing descriptive lm line on fixed 18 points; loaded inference, no tests or bootstrap')
     return records

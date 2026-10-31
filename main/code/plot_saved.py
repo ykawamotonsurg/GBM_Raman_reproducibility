@@ -24,6 +24,28 @@ PEAKCOL=dict(zip(REG,['#F8766D','#7CAE00','#00BFC4','#C77CFF']))
 PROGRAMS=['HypoxiaGlyco','Stress','Opsonin_sensing','Lysosomal_degradation','Uptake_receptor','Lipid_handling','Efflux_export']
 plt.rcParams.update({'font.family':'DejaVu Sans','font.size':11,'axes.spines.top':False,'axes.spines.right':False,'savefig.facecolor':'white'})
 
+def fucoidan_annotations(summary, tests):
+    """Format saved effects and primary-test P values; do not recompute them."""
+    effects = summary.set_index('Readout', verify_integrity=True)
+    primary = tests.loc[tests['Test'] == 'Exact signed-rank (primary)'].set_index('Band (cm⁻¹)', verify_integrity=True)
+    titles, pvalues = {}, {}
+    for band in (1156, 1514):
+        column = f'{band} cm⁻¹'
+        lower = effects.loc['Pairs with a lower signal', column]
+        reduction = effects.loc['Reduction from the ratio of condition means²', column]
+        if pd.isna(lower) or pd.isna(reduction):
+            raise ValueError(f'Missing saved effect annotation for {band}')
+        titles[band] = f'{lower} pairs lower; mean {reduction} lower'
+        p = float(primary.loc[band, 'BH-adjusted P'])
+        if not np.isfinite(p) or not 0 <= p <= 1:
+            raise ValueError(f'Invalid saved primary BH-adjusted P for {band}')
+        pvalues[band] = p
+    if pvalues[1156] == pvalues[1514]:
+        heading = f'BH-adjusted P = {pvalues[1156]:.5g} for both bands'
+    else:
+        heading = '; '.join(f'{band} cm⁻¹: BH-adjusted P = {pvalues[band]:.5g}' for band in (1156, 1514))
+    return titles, heading
+
 def run(root,output):
     root=Path(root);out=Path(output)/'numeric';out.mkdir(parents=True,exist_ok=True)
     def read(name,source=False):return pd.read_csv(resolve(root,('data/source_data/' if source else 'data/processed/')+name),float_precision='round_trip')
@@ -120,12 +142,14 @@ def run(root,output):
     fig.savefig(out/'Fig_3C_assembly.png',dpi=350,facecolor='white')
     save(fig,'Fig_3C',['main/data/Culture_AllConditions.csv'],'Saved mean, SD and n; control/loading selected, all conditions retained in source data')
     z=read('Fucoidan_Pairs.csv',True);fig,axs=plt.subplots(1,2,figsize=(10,4.7),layout='constrained');dc={'Day1':'#1f77b4','Day2':'#ff7f0e','Day3':'#2ca02c'}
-    for ax,pk,title in zip(axs,[1156,1514],['5/6 pairs lower; mean 27.5% lower','6/6 pairs lower; mean 34.1% lower']):
+    titles, heading = fucoidan_annotations(read('Table_S7A.csv',True), read('Table_S7B.csv',True))
+    for ax,pk in zip(axs,[1156,1514]):
+        title=titles[pk]
         q=z[z.peak==pk]
         for _,r in q.iterrows():ax.plot([0,1],[r.mean_intensity_caro,r.mean_intensity_fuco],'-o',color=dc[r.experiment_id],ms=4,lw=1)
         ax.set_xticks([0,1],[r'oxLDL$^{car}$',r'oxLDL$^{car}$'+'\n+ fucoidan']);ax.set(xlim=(-.2,1.2),ylim=(0,75),ylabel='Peak intensity');ax.set_title(f'{pk} cm$^{{-1}}$\n{title}',fontsize=11)
     handles=[plt.Line2D([0],[0],color=v,marker='o',label=k) for k,v in dc.items()]
-    fig.legend(handles=handles,loc='outside lower center',ncol=3,frameon=False);fig.suptitle('BH-adjusted P = 0.0625 for both bands',fontsize=10)
+    fig.legend(handles=handles,loc='outside lower center',ncol=3,frameon=False);fig.suptitle(heading,fontsize=10)
     save(fig,'Fig_3D',['main/data/Fucoidan_Pairs.csv','main/data/Table_S7A.csv','main/data/Table_S7B.csv'],'6 matched pairs across 3 saved day blocks; existing effect/P annotations only')
     xp=read('spatial_program_scores.csv');progs=list(xp.program.unique());labels=dict(zip(xp.program,xp.program_label))
     # Preserve the source program order used in the approved figure.
